@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="head">🧁Med's  Cakery🧁</h1>
+    </div>
+    <div class="pic">
+        <p class="p2">Cake delivery available.</p>
+        <p class="p3">Order our cake now!!</p>
+    </div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "2c399f46-a9c7-4702-8663-852664b0043f", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "f25682ac-d601-43be-bacf-8b176825559e", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+            (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+            "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>
